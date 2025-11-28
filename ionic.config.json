@@ -1,0 +1,7 @@
+{
+  "name": "App-ZentralHead",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
