@@ -1,0 +1,52 @@
+
+
+<ion-content class="login-content">
+  <div class="login-container">
+    
+    <img src="assets/icon/login.png"alt=>
+
+    <ion-item class="login-input">
+      <ion-input placeholder="Email"></ion-input>
+    </ion-item>
+
+    <ion-item class="login-input">
+      <ion-input type="password" placeholder="Password"></ion-input>
+    </ion-item>
+
+    <ion-button expand="block" class="login-button">Login</ion-button>
+
+    <p class="forgot-password">Forgot your password?</p>
+  </div>
+  
+
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="home" routerLink="/home">
+        <ion-icon name="home-outline"></ion-icon>
+        <ion-label>Home</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="sell" routerLink="/sell">
+        <ion-icon name="pricetag-outline"></ion-icon>
+        <ion-label>Sell</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="search" routerLink="/search">
+        <ion-icon name="search-outline"></ion-icon>
+        <ion-label>Pesquisar</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="messages" routerLink="/messages">
+        <ion-icon name="chatbubble-outline"></ion-icon>
+        <ion-label>Messages</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="profile" routerLink="/perfil">
+        <ion-icon name="person-outline"></ion-icon>
+        <ion-label>Profile</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+  
+
+</ion-content>

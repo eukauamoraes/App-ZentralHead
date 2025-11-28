@@ -1,0 +1,62 @@
+
+.cadastro-logo{
+    
+    width: 150px; /* Ajuste conforme necessário */
+    margin-bottom: 30px;
+  
+  }
+  .cadastro-content{
+--background: #2e00422f; /* Fundo escuro */
+color: #fff;
+
+  }
+    
+    .cadastro-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+    
+    .cadastro-title {
+      font-size: 36px;
+      color: #a020f0; /* Roxo neon */
+      font-family: 'Cursive', sans-serif;
+      margin-bottom: 30px;
+    }
+    
+    .cadastro-input {
+      width: 100%;
+      margin-bottom: 20px;
+      --background: #531c9148;
+      border-radius: 8px;
+    }
+    
+    .cadastro-button {
+    
+      width: 100%; /* Ocupa toda a largura */
+      height: 45px; /* Ajuste conforme necessário */
+      --background: #a020f0; /* Roxo vibrante */
+      color: #fff;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+    
+    .forgot-password {
+      margin-top: 15px;
+      color: #ccc;
+      font-size: 14px;
+      text-align: center;
+    }
+    
+    ion-tab-bar {
+      --background: #2d1a3d; /* Fundo roxo */
+      --color: #fff; /* Ícones e texto brancos */
+    }
+    
+    ion-icon {
+      font-size: 24px; /* Ajusta tamanho do ícone */
+    }
+    
+   
+    
