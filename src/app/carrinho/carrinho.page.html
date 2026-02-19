@@ -1,13 +1,67 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>carrinho</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content fullscreen class="carrinho-content">
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">carrinho</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <!-- Header -->
+  <div class="top-bar">
+    <ion-icon name="arrow-back-outline"></ion-icon>
+    <h2>Carrinho</h2>
+  </div>
+
+  <!-- Lista de itens -->
+  <div class="item" *ngFor="let item of itens">
+
+    <img [src]="item.imagem" />
+
+    <div class="info">
+      <h3>{{ item.nome }}</h3>
+      <p>Tamanho: {{ item.tamanho }}</p>
+    </div>
+
+    <div class="quantidade">
+      <ion-button fill="clear" size="small">
+        <ion-icon name="remove"></ion-icon>
+      </ion-button>
+
+      <span>{{ item.quantidade }}</span>
+
+      <ion-button fill="clear" size="small">
+        <ion-icon name="add"></ion-icon>
+      </ion-button>
+    </div>
+
+  </div>
+
+  <!-- Resumo -->
+  <div class="resumo">
+    <h3>Resumo do pedido</h3>
+
+    <div class="linha">
+      <span>Subtotal</span>
+      <span>R$ 150,00</span>
+    </div>
+
+    <div class="linha">
+      <span>Taxas</span>
+      <span>R$ 15,00</span>
+    </div>
+
+    <div class="linha">
+      <span>Frete</span>
+      <span>Grátis</span>
+    </div>
+
+    <div class="linha total">
+      <span>Total</span>
+      <span>R$ 165,00</span>
+    </div>
+  </div>
+
 </ion-content>
+
+<!-- Botão fixo -->
+<ion-footer>
+  <ion-toolbar class="footer-btn">
+    <ion-button expand="block" class="btn-finalizar">
+      Finalizar compra
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,68 @@
+<ion-content fullscreen class="inicio-content">
+
+  <!-- Topo -->
+  <div class="top-bar">
+    <ion-icon name="cart-outline"></ion-icon>
+  </div>
+
+  <!-- Barra de Pesquisa -->
+  <div class="search-box">
+    <ion-icon name="search-outline"></ion-icon>
+    <input type="text" placeholder="Pesquisar produtos" />
+  </div>
+
+  <!-- Categorias -->
+  <div class="section">
+    <h2>Categorias em destaque</h2>
+
+    <div class="categorias">
+      <ion-chip>Roupas</ion-chip>
+      <ion-chip>Eletrônicos</ion-chip>
+      <ion-chip>Acessórios</ion-chip>
+      <ion-chip>Calçados</ion-chip>
+    </div>
+  </div>
+
+  <!-- Novidades -->
+  <div class="section">
+    <h2>Novidades</h2>
+
+    <div class="novidade-item" *ngFor="let item of novidades">
+      <div class="info">
+        <span class="novo">Novo</span>
+        <h3>{{ item.nome }}</h3>
+        <p>{{ item.preco }}</p>
+      </div>
+
+      <img [src]="item.imagem" />
+    </div>
+  </div>
+
+</ion-content>
+
+<!-- Bottom Navigation -->
+<ion-footer>
+  <ion-toolbar class="bottom-nav">
+
+    <ion-buttons slot="start">
+
+      <ion-button>
+        <ion-icon name="home"></ion-icon>
+      </ion-button>
+
+      <ion-button>
+        <ion-icon name="grid-outline"></ion-icon>
+      </ion-button>
+
+      <ion-button>
+        <ion-icon name="cart-outline"></ion-icon>
+      </ion-button>
+
+      <ion-button>
+        <ion-icon name="person-outline"></ion-icon>
+      </ion-button>
+
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-footer>
