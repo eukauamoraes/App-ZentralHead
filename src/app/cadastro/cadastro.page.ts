@@ -8,7 +8,7 @@ import { IonContent, IonHeader, IonTitle, IonToolbar, IonInput, IonItem, IonButt
   templateUrl: './cadastro.page.html',
   styleUrls: ['./cadastro.page.scss'],
   standalone: true,
-  imports: [IonTabBar, IonTabs, IonLabel, IonTabButton, IonIcon, IonButton, IonItem, IonInput, IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
+  imports: [IonButton, IonItem, IonInput, IonContent,CommonModule, FormsModule]
 })
 export class CadastroPage implements OnInit {
 

@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
   selector: 'app-chekout',
   standalone: true,
   imports: [IonicModule, CommonModule],
-  templateUrl: './chekout.page.html',
-  styleUrls: ['./chekout.page.scss'],
+  templateUrl: './checkout.page.html',
+  styleUrls: ['./checkout.page.scss'],
 })
 export class ChekoutPage {}
