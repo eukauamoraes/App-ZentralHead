@@ -3,26 +3,24 @@ import { IonicModule } from '@ionic/angular';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-carrinho',
+  selector: 'app-detalhe-pedido',
   standalone: true,
   imports: [IonicModule, CommonModule],
-  templateUrl: './carrinho.page.html',
-  styleUrls: ['./carrinho.page.scss'],
+  templateUrl: './detalhe-pedido.page.html',
+  styleUrls: ['./detalhe-pedido.page.scss'],
 })
-export class CarinhoPage {
+export class DetalhePedidoPage {
 
   itens = [
     {
       nome: 'Camiseta estampada',
       tamanho: 'M',
-      imagem: 'assets/products/camiseta.png',
-      quantidade: 1
+      imagem: 'assets/products/camiseta.png'
     },
     {
       nome: 'Calça jeans',
-      tamanho: 'G',
-      imagem: 'assets/products/calca.png',
-      quantidade: 1
+      tamanho: '38',
+      imagem: 'assets/products/calca.png'
     }
   ];
 

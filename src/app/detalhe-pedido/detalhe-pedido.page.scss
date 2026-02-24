@@ -1,0 +1,122 @@
+.pedido-content {
+  --background: #12071f;
+  padding: 16px;
+}
+
+/* Header */
+.top-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+
+  ion-icon {
+    color: white;
+    font-size: 22px;
+  }
+
+  h2 {
+    color: white;
+    font-size: 18px;
+  }
+}
+
+/* Sections */
+.section {
+  margin-bottom: 25px;
+
+  h3 {
+    color: white;
+    margin-bottom: 12px;
+  }
+}
+
+/* Itens */
+.item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+
+  img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    object-fit: cover;
+    background: #1e0d2f;
+  }
+
+  h4 {
+    color: white;
+    margin: 0;
+  }
+
+  p {
+    color: #c084fc;
+    font-size: 13px;
+  }
+}
+
+/* Envio */
+.envio-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #1e0d2f;
+  padding: 12px;
+  border-radius: 10px;
+
+  ion-icon {
+    color: #a855f7;
+    font-size: 24px;
+  }
+
+  h4 {
+    color: white;
+    margin: 0;
+  }
+
+  p {
+    color: #c084fc;
+    font-size: 13px;
+  }
+}
+
+/* Pagamento */
+.pagamento-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.icon-box {
+  width: 45px;
+  height: 45px;
+  background: #2a1240;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+
+  ion-icon {
+    color: white;
+    font-size: 20px;
+  }
+}
+
+.icon-box.roxo {
+  background: #7e22ce;
+}
+
+/* Bottom Nav */
+.bottom-nav {
+  --background: #1e0d2f;
+  display: flex;
+  justify-content: space-around;
+
+  ion-icon {
+    color: white;
+    font-size: 22px;
+  }
+}

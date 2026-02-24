@@ -1,0 +1,66 @@
+<ion-content fullscreen class="detalhes-content">
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <ion-icon name="arrow-back-outline"></ion-icon>
+    <ion-icon name="share-social-outline"></ion-icon>
+  </div>
+
+  <!-- Imagens -->
+  <div class="galeria">
+    <div class="imagem" *ngFor="let img of produto.imagens">
+      <img [src]="img" />
+    </div>
+  </div>
+
+  <!-- Nome e descrição -->
+  <div class="info-produto">
+    <h2>{{ produto.nome }}</h2>
+    <p>{{ produto.descricao }}</p>
+  </div>
+
+  <!-- Detalhes -->
+  <div class="detalhes">
+    <h3>Detalhes do Produto</h3>
+
+    <div class="linha">
+      <div>
+        <span>Marca</span>
+        <p>Elegance</p>
+      </div>
+
+      <div>
+        <span>Tamanho</span>
+        <p>M</p>
+      </div>
+    </div>
+
+    <div class="linha">
+      <div>
+        <span>Cor</span>
+        <p>Roxo</p>
+      </div>
+
+      <div>
+        <span>Material</span>
+        <p>Seda</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Preço -->
+  <div class="preco">
+    <h3>Preço</h3>
+    <p>{{ produto.preco }}</p>
+  </div>
+
+</ion-content>
+
+<!-- Botão fixo -->
+<ion-footer>
+  <ion-toolbar class="footer-btn">
+    <ion-button expand="block" class="btn-carrinho">
+      Adicionar ao Carrinho
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

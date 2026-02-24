@@ -1,0 +1,40 @@
+.catalogo-content {
+  --background: #12071f;
+}
+
+.filtros {
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+  overflow-x: auto;
+
+  ion-chip {
+    --background: transparent;
+    --color: #a855f7;
+    border: 1px solid #7e22ce;
+  }
+}
+
+.produto-card {
+  background: #1e0d2f;
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 15px;
+
+  img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  h3 {
+    color: #fff;
+    font-size: 14px;
+    margin: 8px 0 4px;
+  }
+
+  p {
+    color: #a855f7;
+    font-weight: bold;
+  }
+}

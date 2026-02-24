@@ -1,0 +1,91 @@
+<ion-content fullscreen class="pedido-content">
+
+  <!-- Header -->
+  <div class="top-bar">
+    <ion-icon name="arrow-back-outline"></ion-icon>
+    <h2>Detalhes do pedido</h2>
+  </div>
+
+  <!-- Itens -->
+  <div class="section">
+    <h3>Itens</h3>
+
+    <div class="item" *ngFor="let item of itens">
+      <img [src]="item.imagem" />
+
+      <div class="info">
+        <h4>{{ item.nome }}</h4>
+        <p>Tamanho: {{ item.tamanho }}</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Envio -->
+  <div class="section">
+    <h3>Envio</h3>
+
+    <div class="envio-box">
+      <ion-icon name="car-outline"></ion-icon>
+
+      <div>
+        <h4>Status: Enviado</h4>
+        <p>Entrega estimada: 25 de julho</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pagamento -->
+  <div class="section">
+    <h3>Pagamento</h3>
+
+    <div class="pagamento-item">
+      <div class="icon-box">
+        <ion-icon name="card-outline"></ion-icon>
+      </div>
+
+      <div>
+        <h4>Cartão de crédito</h4>
+        <p>Finalizando em 1234</p>
+      </div>
+    </div>
+
+    <div class="pagamento-item">
+      <div class="icon-box roxo">
+        <ion-icon name="cash-outline"></ion-icon>
+      </div>
+
+      <div>
+        <h4>Valor pago</h4>
+        <p>Total: R$ 150,00</p>
+      </div>
+    </div>
+  </div>
+
+</ion-content>
+
+<!-- Bottom Nav -->
+<ion-footer>
+  <ion-toolbar class="bottom-nav">
+
+    <ion-buttons slot="start">
+
+      <ion-button>
+        <ion-icon name="home-outline"></ion-icon>
+      </ion-button>
+
+      <ion-button>
+        <ion-icon name="search-outline"></ion-icon>
+      </ion-button>
+
+      <ion-button>
+        <ion-icon name="cart"></ion-icon>
+      </ion-button>
+
+      <ion-button>
+        <ion-icon name="person-outline"></ion-icon>
+      </ion-button>
+
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-footer>

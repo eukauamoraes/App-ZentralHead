@@ -24,13 +24,10 @@ export const routes: Routes = [
     path: 'catalogo',
     loadComponent: () => import('./catalogo/catalogo.page').then( m => m.CatalogoPage)
   },
-  {
-    path: 'detalhesdopedido',
-    loadComponent: () => import('./detalhesdopedido/detalhesdopedido.page').then( m => m.DetalhesdopedidoPage)
-  },
+
   {
     path: 'carrinho',
-    loadComponent: () => import('./carrinho/carrinho.page').then( m => m.CarrinhoPage)
+    loadComponent: () => import('./carrinho/carrinho.page').then( m => m.CarinhoPage)
   },
   {
     path: 'perfil',
@@ -40,12 +37,31 @@ export const routes: Routes = [
     path: 'enderecos',
     loadComponent: () => import('./enderecos/enderecos.page').then( m => m.EnderecosPage)
   },
-  {
-    path: 'chekout',
-    loadComponent: () => import('./chekout/chekout.page').then( m => m.ChekoutPage)
-  },
+
   {
     path: 'metadodepagamento',
     loadComponent: () => import('./metadodepagamento/metadodepagamento.page').then( m => m.MetadodepagamentoPage)
   },
+
+  
+  {
+    path: 'inicio',
+    loadComponent: () => import('./inicio/inicio.page').then( m => m.InicioPage)
+  },
+  {
+    path: 'detalhes-produto',
+    loadComponent: () => import('./detalhes-produto/detalhes-produto.page').then( m => m.DetalhesProdutoPage)
+  },
+  {
+    path: 'detalhe-pedido',
+    loadComponent: () => import('./detalhe-pedido/detalhe-pedido.page').then( m => m.DetalhePedidoPage)
+  },
+  {
+    path: 'checkout',
+    loadComponent: () => import('./checkout/checkout.page').then( m => m.ChekoutPage)
+  },
+
+
+
+
 ];
