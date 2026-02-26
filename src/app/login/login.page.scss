@@ -1,61 +1,70 @@
-
-.login-logo{
-    
-  width: 150px; /* Ajuste conforme necessário */
-  margin-bottom: 30px;
-
-}
+/* Fundo da tela */
 .login-content {
-    --background: #45075f2f; /* Fundo escuro */
-    color: #fff;
-  }
+  --background: #45075f2f;
+}
+
+.login-content::part(scroll) {
+  display: flex;
+  justify-content: center;   /* centro vertical */
+  align-items: center;       /* centro horizontal */
+  min-height: 100%;
   
-  .login-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px 20px;
-  }
   
-  .login-title {
-    font-size: 36px;
-    color: #a020f0; /* Roxo neon */
-    font-family: 'Cursive', sans-serif;
-    margin-bottom: 30px;
-  }
-  
-  .login-input {
-    width: 100%;
-    margin-bottom: 20px;
-    --background: #531c9148;
-    border-radius: 8px;
-  }
-  
-  .login-button {
-  
-    width: 100%; /* Ocupa toda a largura */
-    height: 45px; /* Ajuste conforme necessário */
-    --background: #a020f0; /* Roxo vibrante */
-    color: #fff;
-    font-weight: bold;
-    margin-top: 20px;
-  }
-  
-  .forgot-password {
-    margin-top: 15px;
-    color: #ccc;
-    font-size: 14px;
-    text-align: center;
-  }
-  
-  ion-tab-bar {
-    --background: #2d1a3d; /* Fundo roxo */
-    --color: #fff; /* Ícones e texto brancos */
-  }
-  
-  ion-icon {
-    font-size: 24px; /* Ajusta tamanho do ícone */
-  }
-  
- 
-  
+}
+
+/* Container principal */
+.login-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  max-width: 480px;
+  margin: auto;
+   transform: translateY(-100px); /* sobe o bloco */
+}
+
+/* Logo */
+.login-logo {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+/* Inputs */
+.login-input {
+  width: 100%;
+  margin-bottom: 16px;
+  --background: #531c9148;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+}
+
+/* Texto do input */
+ion-input {
+  color: #fff;
+}
+
+/* Botão */
+.login-button {
+  width: 100%;
+  height: 48px;
+  margin-top: 8px;
+  border-radius: 12px;
+  font-weight: 600;
+  --background: linear-gradient(90deg, #8a2be2, #a020f0);
+  --box-shadow: 0 6px 18px rgba(160, 32, 240, 0.35);
+}
+
+/* Esqueceu senha */
+.forgot-password {
+  margin-top: 18px;
+  font-size: 14px;
+  color: #cfcfcf;
+  text-align: center;
+}
+
+.link {
+  color: #a020f0;
+  font-weight: 500;
+}

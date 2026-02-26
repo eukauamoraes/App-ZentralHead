@@ -6,18 +6,28 @@
   
   }
   .cadastro-content{
-  --background: #45075f2f; /* Fundo escuro */
-    color: #fff;
+  display: flex;
+  justify-content: center;   /* centro vertical */
+  align-items: center;       /* centro horizontal */
+  min-height: 100%;
 
   }
     
     .cadastro-container {
+     --background: #45075f2f;
       display: flex;
       flex-direction: column;
       align-items: center;
       padding: 40px 20px;
     }
-    
+
+    .logoCadastro{
+        text-align: center;
+        color: #fff;
+        margin-bottom: 30px;
+    }
+
+
     .cadastro-title {
       font-size: 36px;
       color: #a020f0; /* Roxo neon */
@@ -27,9 +37,10 @@
     
     .cadastro-input {
       width: 100%;
-      margin-bottom: 20px;
-      --background: #531c9148;
-      border-radius: 8px;
+      margin-bottom: 16px;
+     --background: #531c9148;
+      border-radius: 12px;
+      backdrop-filter: blur(6px);
     }
     
     .cadastro-button {
@@ -50,7 +61,7 @@
     }
     
     ion-tab-bar {
-      --background: #2d1a3d; /* Fundo roxo */
+      --background: #412a55; /* Fundo roxo */
       --color: #fff; /* Ícones e texto brancos */
     }
     
