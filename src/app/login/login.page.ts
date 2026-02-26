@@ -1,14 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { ToastController } from '@ionic/angular';
-
+import { ToastController, IonicModule } from '@ionic/angular';
+import { Auth } from '../services/auth';
+import { IonContent } from "@ionic/angular/standalone";
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.page.html',
   styleUrls: ['./login.page.scss'],
-  standalone: true
+  standalone: true,
+  imports: [IonicModule]
 })
 export class LoginPage implements OnInit {
 form!: FormGroup;
